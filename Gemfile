@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'puppet', '=2.7.25'
+gem 'rspec-core', '= 2.14.8'
+gem 'rspec-mocks', '= 2.14.6'
+gem 'rspec-expectations', '= 2.14.5'
+gem 'rspec', '= 2.14.1'
+gem 'puppetlabs_spec_helper', '>= 0.4.1'
