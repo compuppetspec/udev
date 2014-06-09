@@ -1,6 +1,8 @@
 #!/bin/bash
 source /etc/profile.d/rvm.sh
 rvm use 1.8.7-p374@udev --create
+export http_proxy=http://proxy:3128/
+export https_proxy=https://proxy:3128/
 bundle install
 presentstat=`gem list | grep puppetlabs_spec_helper| grep 0.4.1.43 | wc -l`
 if [[ ${presentstat} -eq 0 ]]
